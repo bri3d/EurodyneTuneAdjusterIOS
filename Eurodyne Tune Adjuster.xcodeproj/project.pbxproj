@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD21B06320FBE1A300042598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B06220FBE1A300042598 /* AppDelegate.swift */; };
+		BD21B06520FBE1A300042598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B06420FBE1A300042598 /* ViewController.swift */; };
+		BD21B06820FBE1A300042598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD21B06620FBE1A300042598 /* Main.storyboard */; };
+		BD21B06A20FBE1A500042598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD21B06920FBE1A500042598 /* Assets.xcassets */; };
+		BD21B06D20FBE1A500042598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD21B06B20FBE1A500042598 /* LaunchScreen.storyboard */; };
+		BD21B07820FBE1A600042598 /* Eurodyne_Tune_AdjusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B07720FBE1A600042598 /* Eurodyne_Tune_AdjusterTests.swift */; };
+		BD21B08320FBE1A600042598 /* Eurodyne_Tune_AdjusterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B08220FBE1A600042598 /* Eurodyne_Tune_AdjusterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD21B07420FBE1A600042598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD21B05720FBE1A300042598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD21B05E20FBE1A300042598;
+			remoteInfo = "Eurodyne Tune Adjuster";
+		};
+		BD21B07F20FBE1A600042598 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD21B05720FBE1A300042598 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD21B05E20FBE1A300042598;
+			remoteInfo = "Eurodyne Tune Adjuster";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD21B05F20FBE1A300042598 /* Eurodyne Tune Adjuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eurodyne Tune Adjuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD21B06220FBE1A300042598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD21B06420FBE1A300042598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD21B06720FBE1A300042598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD21B06920FBE1A500042598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD21B06C20FBE1A500042598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD21B06E20FBE1A500042598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD21B07320FBE1A600042598 /* Eurodyne Tune AdjusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eurodyne Tune AdjusterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD21B07720FBE1A600042598 /* Eurodyne_Tune_AdjusterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurodyne_Tune_AdjusterTests.swift; sourceTree = "<group>"; };
+		BD21B07920FBE1A600042598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD21B07E20FBE1A600042598 /* Eurodyne Tune AdjusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eurodyne Tune AdjusterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD21B08220FBE1A600042598 /* Eurodyne_Tune_AdjusterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurodyne_Tune_AdjusterUITests.swift; sourceTree = "<group>"; };
+		BD21B08420FBE1A600042598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD21B05C20FBE1A300042598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD21B07020FBE1A600042598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD21B07B20FBE1A600042598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD21B05620FBE1A300042598 = {
+			isa = PBXGroup;
+			children = (
+				BD21B06120FBE1A300042598 /* Eurodyne Tune Adjuster */,
+				BD21B07620FBE1A600042598 /* Eurodyne Tune AdjusterTests */,
+				BD21B08120FBE1A600042598 /* Eurodyne Tune AdjusterUITests */,
+				BD21B06020FBE1A300042598 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD21B06020FBE1A300042598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD21B05F20FBE1A300042598 /* Eurodyne Tune Adjuster.app */,
+				BD21B07320FBE1A600042598 /* Eurodyne Tune AdjusterTests.xctest */,
+				BD21B07E20FBE1A600042598 /* Eurodyne Tune AdjusterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD21B06120FBE1A300042598 /* Eurodyne Tune Adjuster */ = {
+			isa = PBXGroup;
+			children = (
+				BD21B06220FBE1A300042598 /* AppDelegate.swift */,
+				BD21B06420FBE1A300042598 /* ViewController.swift */,
+				BD21B06620FBE1A300042598 /* Main.storyboard */,
+				BD21B06920FBE1A500042598 /* Assets.xcassets */,
+				BD21B06B20FBE1A500042598 /* LaunchScreen.storyboard */,
+				BD21B06E20FBE1A500042598 /* Info.plist */,
+			);
+			path = "Eurodyne Tune Adjuster";
+			sourceTree = "<group>";
+		};
+		BD21B07620FBE1A600042598 /* Eurodyne Tune AdjusterTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD21B07720FBE1A600042598 /* Eurodyne_Tune_AdjusterTests.swift */,
+				BD21B07920FBE1A600042598 /* Info.plist */,
+			);
+			path = "Eurodyne Tune AdjusterTests";
+			sourceTree = "<group>";
+		};
+		BD21B08120FBE1A600042598 /* Eurodyne Tune AdjusterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD21B08220FBE1A600042598 /* Eurodyne_Tune_AdjusterUITests.swift */,
+				BD21B08420FBE1A600042598 /* Info.plist */,
+			);
+			path = "Eurodyne Tune AdjusterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD21B05E20FBE1A300042598 /* Eurodyne Tune Adjuster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD21B08720FBE1A600042598 /* Build configuration list for PBXNativeTarget "Eurodyne Tune Adjuster" */;
+			buildPhases = (
+				BD21B05B20FBE1A300042598 /* Sources */,
+				BD21B05C20FBE1A300042598 /* Frameworks */,
+				BD21B05D20FBE1A300042598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eurodyne Tune Adjuster";
+			productName = "Eurodyne Tune Adjuster";
+			productReference = BD21B05F20FBE1A300042598 /* Eurodyne Tune Adjuster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD21B07220FBE1A600042598 /* Eurodyne Tune AdjusterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD21B08A20FBE1A600042598 /* Build configuration list for PBXNativeTarget "Eurodyne Tune AdjusterTests" */;
+			buildPhases = (
+				BD21B06F20FBE1A600042598 /* Sources */,
+				BD21B07020FBE1A600042598 /* Frameworks */,
+				BD21B07120FBE1A600042598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD21B07520FBE1A600042598 /* PBXTargetDependency */,
+			);
+			name = "Eurodyne Tune AdjusterTests";
+			productName = "Eurodyne Tune AdjusterTests";
+			productReference = BD21B07320FBE1A600042598 /* Eurodyne Tune AdjusterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD21B07D20FBE1A600042598 /* Eurodyne Tune AdjusterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD21B08D20FBE1A600042598 /* Build configuration list for PBXNativeTarget "Eurodyne Tune AdjusterUITests" */;
+			buildPhases = (
+				BD21B07A20FBE1A600042598 /* Sources */,
+				BD21B07B20FBE1A600042598 /* Frameworks */,
+				BD21B07C20FBE1A600042598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD21B08020FBE1A600042598 /* PBXTargetDependency */,
+			);
+			name = "Eurodyne Tune AdjusterUITests";
+			productName = "Eurodyne Tune AdjusterUITests";
+			productReference = BD21B07E20FBE1A600042598 /* Eurodyne Tune AdjusterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD21B05720FBE1A300042598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Brian Ledbetter";
+				TargetAttributes = {
+					BD21B05E20FBE1A300042598 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					BD21B07220FBE1A600042598 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BD21B05E20FBE1A300042598;
+					};
+					BD21B07D20FBE1A600042598 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BD21B05E20FBE1A300042598;
+					};
+				};
+			};
+			buildConfigurationList = BD21B05A20FBE1A300042598 /* Build configuration list for PBXProject "Eurodyne Tune Adjuster" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD21B05620FBE1A300042598;
+			productRefGroup = BD21B06020FBE1A300042598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD21B05E20FBE1A300042598 /* Eurodyne Tune Adjuster */,
+				BD21B07220FBE1A600042598 /* Eurodyne Tune AdjusterTests */,
+				BD21B07D20FBE1A600042598 /* Eurodyne Tune AdjusterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD21B05D20FBE1A300042598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD21B06D20FBE1A500042598 /* LaunchScreen.storyboard in Resources */,
+				BD21B06A20FBE1A500042598 /* Assets.xcassets in Resources */,
+				BD21B06820FBE1A300042598 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD21B07120FBE1A600042598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD21B07C20FBE1A600042598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD21B05B20FBE1A300042598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD21B06520FBE1A300042598 /* ViewController.swift in Sources */,
+				BD21B06320FBE1A300042598 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD21B06F20FBE1A600042598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD21B07820FBE1A600042598 /* Eurodyne_Tune_AdjusterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD21B07A20FBE1A600042598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD21B08320FBE1A600042598 /* Eurodyne_Tune_AdjusterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD21B07520FBE1A600042598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD21B05E20FBE1A300042598 /* Eurodyne Tune Adjuster */;
+			targetProxy = BD21B07420FBE1A600042598 /* PBXContainerItemProxy */;
+		};
+		BD21B08020FBE1A600042598 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD21B05E20FBE1A300042598 /* Eurodyne Tune Adjuster */;
+			targetProxy = BD21B07F20FBE1A600042598 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD21B06620FBE1A300042598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD21B06720FBE1A300042598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD21B06B20FBE1A500042598 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD21B06C20FBE1A500042598 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD21B08520FBE1A600042598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD21B08620FBE1A600042598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD21B08820FBE1A600042598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Eurodyne Tune Adjuster/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-Adjuster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD21B08920FBE1A600042598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Eurodyne Tune Adjuster/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-Adjuster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD21B08B20FBE1A600042598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Eurodyne Tune AdjusterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-AdjusterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eurodyne Tune Adjuster.app/Eurodyne Tune Adjuster";
+			};
+			name = Debug;
+		};
+		BD21B08C20FBE1A600042598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Eurodyne Tune AdjusterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-AdjusterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eurodyne Tune Adjuster.app/Eurodyne Tune Adjuster";
+			};
+			name = Release;
+		};
+		BD21B08E20FBE1A600042598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Eurodyne Tune AdjusterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-AdjusterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eurodyne Tune Adjuster";
+			};
+			name = Debug;
+		};
+		BD21B08F20FBE1A600042598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Eurodyne Tune AdjusterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-AdjusterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eurodyne Tune Adjuster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD21B05A20FBE1A300042598 /* Build configuration list for PBXProject "Eurodyne Tune Adjuster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD21B08520FBE1A600042598 /* Debug */,
+				BD21B08620FBE1A600042598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD21B08720FBE1A600042598 /* Build configuration list for PBXNativeTarget "Eurodyne Tune Adjuster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD21B08820FBE1A600042598 /* Debug */,
+				BD21B08920FBE1A600042598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD21B08A20FBE1A600042598 /* Build configuration list for PBXNativeTarget "Eurodyne Tune AdjusterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD21B08B20FBE1A600042598 /* Debug */,
+				BD21B08C20FBE1A600042598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD21B08D20FBE1A600042598 /* Build configuration list for PBXNativeTarget "Eurodyne Tune AdjusterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD21B08E20FBE1A600042598 /* Debug */,
+				BD21B08F20FBE1A600042598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD21B05720FBE1A300042598 /* Project object */;
+}
