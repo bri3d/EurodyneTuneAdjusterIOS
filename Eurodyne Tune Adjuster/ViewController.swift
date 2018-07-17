@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import Promises
 
 class ViewController: UIViewController {
+    @IBOutlet var boostLabel : UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let elm327 = ELM327()
+        elm327.connectTo(ip: "192.168.0.10").then { (success) -> Promise<Int> in
+            let isoIO = ISO15765(elm327 : elm327)
+            let edIO = Eurodyne(iso15765: isoIO)
+            return elm327.initializeELM().then { (_) in
+                return edIO.getBoostSetting()
+                }.then { (boostSetting) -> Void in
+                    self.boostLabel?.text = String(boostSetting)
+                    print("Boost is set to \(boostSetting) PSI")
+                }
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63A95AF8724B0640ECC4374D /* Pods_Eurodyne_Tune_Adjuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F2EAD9B3D8662DA5D2F71D /* Pods_Eurodyne_Tune_Adjuster.framework */; };
 		BD21B06320FBE1A300042598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B06220FBE1A300042598 /* AppDelegate.swift */; };
 		BD21B06520FBE1A300042598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B06420FBE1A300042598 /* ViewController.swift */; };
 		BD21B06820FBE1A300042598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD21B06620FBE1A300042598 /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		BD21B06D20FBE1A500042598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD21B06B20FBE1A500042598 /* LaunchScreen.storyboard */; };
 		BD21B07820FBE1A600042598 /* Eurodyne_Tune_AdjusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B07720FBE1A600042598 /* Eurodyne_Tune_AdjusterTests.swift */; };
 		BD21B08320FBE1A600042598 /* Eurodyne_Tune_AdjusterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B08220FBE1A600042598 /* Eurodyne_Tune_AdjusterUITests.swift */; };
+		BD21B09120FBE38B00042598 /* ELM327.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21B09020FBE38B00042598 /* ELM327.swift */; };
+		BDDDCFB920FC358700F2C9C8 /* String+HexToData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFB820FC358700F2C9C8 /* String+HexToData.swift */; };
+		BDDDCFBB20FD7D5400F2C9C8 /* ISO15765.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFBA20FD7D5400F2C9C8 /* ISO15765.swift */; };
+		BDDDCFBD20FD7E1500F2C9C8 /* Data+HexEncodedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFBC20FD7E1500F2C9C8 /* Data+HexEncodedString.swift */; };
+		BDDDCFBF20FD7F9F00F2C9C8 /* Eurodyne.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */; };
+		BDDDCFC120FD900E00F2C9C8 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFC020FD900E00F2C9C8 /* Regex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18F2EAD9B3D8662DA5D2F71D /* Pods_Eurodyne_Tune_Adjuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eurodyne_Tune_Adjuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B223635B86246D4D23B54378 /* Pods-Eurodyne Tune Adjuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eurodyne Tune Adjuster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eurodyne Tune Adjuster/Pods-Eurodyne Tune Adjuster.release.xcconfig"; sourceTree = "<group>"; };
 		BD21B05F20FBE1A300042598 /* Eurodyne Tune Adjuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eurodyne Tune Adjuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD21B06220FBE1A300042598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD21B06420FBE1A300042598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,13 @@
 		BD21B07E20FBE1A600042598 /* Eurodyne Tune AdjusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eurodyne Tune AdjusterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD21B08220FBE1A600042598 /* Eurodyne_Tune_AdjusterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurodyne_Tune_AdjusterUITests.swift; sourceTree = "<group>"; };
 		BD21B08420FBE1A600042598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD21B09020FBE38B00042598 /* ELM327.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELM327.swift; sourceTree = "<group>"; };
+		BDDDCFB820FC358700F2C9C8 /* String+HexToData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HexToData.swift"; sourceTree = "<group>"; };
+		BDDDCFBA20FD7D5400F2C9C8 /* ISO15765.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO15765.swift; sourceTree = "<group>"; };
+		BDDDCFBC20FD7E1500F2C9C8 /* Data+HexEncodedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+HexEncodedString.swift"; sourceTree = "<group>"; };
+		BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurodyne.swift; sourceTree = "<group>"; };
+		BDDDCFC020FD900E00F2C9C8 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		F28EA88167C0243834C200E2 /* Pods-Eurodyne Tune Adjuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eurodyne Tune Adjuster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eurodyne Tune Adjuster/Pods-Eurodyne Tune Adjuster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A95AF8724B0640ECC4374D /* Pods_Eurodyne_Tune_Adjuster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184C2D527B3941F5F8115388 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F28EA88167C0243834C200E2 /* Pods-Eurodyne Tune Adjuster.debug.xcconfig */,
+				B223635B86246D4D23B54378 /* Pods-Eurodyne Tune Adjuster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BD21B05620FBE1A300042598 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,8 @@
 				BD21B07620FBE1A600042598 /* Eurodyne Tune AdjusterTests */,
 				BD21B08120FBE1A600042598 /* Eurodyne Tune AdjusterUITests */,
 				BD21B06020FBE1A300042598 /* Products */,
+				184C2D527B3941F5F8115388 /* Pods */,
+				BF081819B901AC892FF1DDD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +131,12 @@
 				BD21B06920FBE1A500042598 /* Assets.xcassets */,
 				BD21B06B20FBE1A500042598 /* LaunchScreen.storyboard */,
 				BD21B06E20FBE1A500042598 /* Info.plist */,
+				BD21B09020FBE38B00042598 /* ELM327.swift */,
+				BDDDCFB820FC358700F2C9C8 /* String+HexToData.swift */,
+				BDDDCFBA20FD7D5400F2C9C8 /* ISO15765.swift */,
+				BDDDCFBC20FD7E1500F2C9C8 /* Data+HexEncodedString.swift */,
+				BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */,
+				BDDDCFC020FD900E00F2C9C8 /* Regex.swift */,
 			);
 			path = "Eurodyne Tune Adjuster";
 			sourceTree = "<group>";
@@ -125,6 +159,14 @@
 			path = "Eurodyne Tune AdjusterUITests";
 			sourceTree = "<group>";
 		};
+		BF081819B901AC892FF1DDD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F2EAD9B3D8662DA5D2F71D /* Pods_Eurodyne_Tune_Adjuster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD21B08720FBE1A600042598 /* Build configuration list for PBXNativeTarget "Eurodyne Tune Adjuster" */;
 			buildPhases = (
+				AEB0DBC1EEDAA6D4C08B4CE6 /* [CP] Check Pods Manifest.lock */,
 				BD21B05B20FBE1A300042598 /* Sources */,
 				BD21B05C20FBE1A300042598 /* Frameworks */,
 				BD21B05D20FBE1A300042598 /* Resources */,
+				4F5F56053BFF877602B8AAD9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,12 +295,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F5F56053BFF877602B8AAD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Eurodyne Tune Adjuster/Pods-Eurodyne Tune Adjuster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eurodyne Tune Adjuster/Pods-Eurodyne Tune Adjuster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB0DBC1EEDAA6D4C08B4CE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eurodyne Tune Adjuster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD21B05B20FBE1A300042598 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD21B09120FBE38B00042598 /* ELM327.swift in Sources */,
+				BDDDCFC120FD900E00F2C9C8 /* Regex.swift in Sources */,
+				BDDDCFBD20FD7E1500F2C9C8 /* Data+HexEncodedString.swift in Sources */,
+				BDDDCFB920FC358700F2C9C8 /* String+HexToData.swift in Sources */,
+				BDDDCFBF20FD7F9F00F2C9C8 /* Eurodyne.swift in Sources */,
 				BD21B06520FBE1A300042598 /* ViewController.swift in Sources */,
+				BDDDCFBB20FD7D5400F2C9C8 /* ISO15765.swift in Sources */,
 				BD21B06320FBE1A300042598 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +521,7 @@
 		};
 		BD21B08820FBE1A600042598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F28EA88167C0243834C200E2 /* Pods-Eurodyne Tune Adjuster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +539,7 @@
 		};
 		BD21B08920FBE1A600042598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B223635B86246D4D23B54378 /* Pods-Eurodyne Tune Adjuster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

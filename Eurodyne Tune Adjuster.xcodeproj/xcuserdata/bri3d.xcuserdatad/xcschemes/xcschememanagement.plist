@@ -7,7 +7,25 @@
 		<key>Eurodyne Tune Adjuster.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BD21B05E20FBE1A300042598</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD21B07220FBE1A600042598</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD21B07D20FBE1A600042598</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -1,0 +1,6 @@
+framework module Pods_Eurodyne_Tune_Adjuster {
+  umbrella header "Pods-Eurodyne Tune Adjuster-umbrella.h"
+
+  export *
+  module * { export * }
+}
