@@ -68,8 +68,7 @@ class Eurodyne {
         let writeOctaneByte = UInt8(octane)
         let localIdentifier = Data([0xF1, 0xF9])
         return iso15765.writeLocalIdentifier(localIdentifier: localIdentifier, value: Data([writeOctaneByte])).then { (data) -> Promise<Int> in
-            let uint8 = data.first!
-            return Promise<Int>(Int(uint8))
+            return Promise<Int>(octane)
         }
     }
     
@@ -77,8 +76,7 @@ class Eurodyne {
         let writeBoostByte = calculateWriteBoost(psi: boost)
         let localIdentifier = Data([0xF1, 0xF8])
         return iso15765.writeLocalIdentifier(localIdentifier: localIdentifier, value: Data([writeBoostByte])).then { (data) -> Promise<Int> in
-            let uint8 = data.first!
-            return Promise<Int>(self.calculateBoost(boost: uint8))
+            return Promise<Int>(boost)
         }
     }
     

@@ -164,6 +164,7 @@
                         <outlet property="octaneMaximum" destination="cRI-gE-3aJ" id="lTb-if-3Tb"/>
                         <outlet property="octaneMinimum" destination="2G3-26-xxu" id="2a1-66-2ez"/>
                         <outlet property="octaneSlider" destination="d6g-fu-ici" id="HyM-dv-huM"/>
+                        <outlet property="saveButton" destination="HzV-OZ-hJR" id="iIu-2g-bcl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

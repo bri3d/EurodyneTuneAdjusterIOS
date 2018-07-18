@@ -33,29 +33,31 @@ class ViewController: UIViewController {
             connection.eurodyne.getOctaneMinimum().then({ (octaneNumber) -> Void in
                 self.octaneMinimum?.text = String(octaneNumber)
                 self.octaneSlider?.minimumValue = Float(octaneNumber)
-            }).then({ (_) -> Void in
-                connection.eurodyne.getOctaneMinimum().then({ (octaneNumber) -> Void in
+            }).then({ (_) -> Promise<Int> in
+                return connection.eurodyne.getOctaneMaximum().then({ (octaneNumber) -> Void in
                     self.octaneMaximum?.text = String(octaneNumber)
                     self.octaneSlider?.maximumValue = Float(octaneNumber)
                 })
-            }).then({ (_) -> Void in
-                connection.eurodyne.getBoostMinimum().then({ (boostNumber) -> Void in
+            }).then({ (_) -> Promise<Int> in
+                return connection.eurodyne.getBoostMinimum().then({ (boostNumber) -> Void in
                     self.boostMinimum?.text = String(boostNumber)
                     self.boostSlider?.minimumValue = Float(boostNumber)
                 })
-            }).then({ (_) -> Void in
-                connection.eurodyne.getBoostMaximum().then({ (boostNumber) -> Void in
+            }).then({ (_) -> Promise<Int> in
+                return connection.eurodyne.getBoostMaximum().then({ (boostNumber) -> Void in
                     self.boostMaximum?.text = String(boostNumber)
                     self.boostSlider?.maximumValue = Float(boostNumber)
                 })
-            }).then({ (_) -> Void in
-                connection.eurodyne.getOctaneSetting().then({ (octaneNumber) -> Void in
+            }).then({ (_) -> Promise<Int> in
+                return connection.eurodyne.getOctaneSetting().then({ (octaneNumber) -> Void in
                     self.octaneLabel?.text = String(octaneNumber)
+                    self.octaneSlider?.value = Float(octaneNumber)
                     self.octaneSlider?.isEnabled = true
                 })
-            }).then({ (_) -> Void in
-                connection.eurodyne.getBoostSetting().then({ (boostNumber) -> Void in
+            }).then({ (_) -> Promise<Int> in
+                return connection.eurodyne.getBoostSetting().then({ (boostNumber) -> Void in
                     self.boostLabel?.text = String(boostNumber)
+                    self.boostSlider?.value = Float(boostNumber)
                     self.boostSlider?.isEnabled = true
                 })
             }).then({ (_) -> Void in
@@ -65,10 +67,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func boostSliderUpdated(sender : UISlider) {
+        sender.value = round(sender.value)
         self.boostLabel?.text = String(sender.value)
     }
     
     @IBAction func octaneSliderUpdated(sender: UISlider) {
+        sender.value = round(sender.value)
         self.octaneLabel?.text = String(sender.value)
     }
     
