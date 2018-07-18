@@ -21,6 +21,7 @@
 		BDDDCFBD20FD7E1500F2C9C8 /* Data+HexEncodedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFBC20FD7E1500F2C9C8 /* Data+HexEncodedString.swift */; };
 		BDDDCFBF20FD7F9F00F2C9C8 /* Eurodyne.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */; };
 		BDDDCFC120FD900E00F2C9C8 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFC020FD900E00F2C9C8 /* Regex.swift */; };
+		BDDDCFC320FEBEDE00F2C9C8 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFC220FEBEDE00F2C9C8 /* Connection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		BDDDCFBC20FD7E1500F2C9C8 /* Data+HexEncodedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+HexEncodedString.swift"; sourceTree = "<group>"; };
 		BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurodyne.swift; sourceTree = "<group>"; };
 		BDDDCFC020FD900E00F2C9C8 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		BDDDCFC220FEBEDE00F2C9C8 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		F28EA88167C0243834C200E2 /* Pods-Eurodyne Tune Adjuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eurodyne Tune Adjuster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eurodyne Tune Adjuster/Pods-Eurodyne Tune Adjuster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				BDDDCFBC20FD7E1500F2C9C8 /* Data+HexEncodedString.swift */,
 				BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */,
 				BDDDCFC020FD900E00F2C9C8 /* Regex.swift */,
+				BDDDCFC220FEBEDE00F2C9C8 /* Connection.swift */,
 			);
 			path = "Eurodyne Tune Adjuster";
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD21B09120FBE38B00042598 /* ELM327.swift in Sources */,
+				BDDDCFC320FEBEDE00F2C9C8 /* Connection.swift in Sources */,
 				BDDDCFC120FD900E00F2C9C8 /* Regex.swift in Sources */,
 				BDDDCFBD20FD7E1500F2C9C8 /* Data+HexEncodedString.swift in Sources */,
 				BDDDCFB920FC358700F2C9C8 /* String+HexToData.swift in Sources */,

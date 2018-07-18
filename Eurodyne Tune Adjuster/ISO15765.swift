@@ -25,5 +25,15 @@ class ISO15765 {
         })
     }
     
+    func writeLocalIdentifier(localIdentifier: Data, value: Data) -> Promise<Data> {
+        var dataToSend = Data()
+        dataToSend.append(0x2E)
+        dataToSend.append(localIdentifier)
+        dataToSend.append(value)
+        return elm327.sendMessageDataAndGetData(data: dataToSend).then({ (returnData) -> Promise<Data> in
+            return Promise<Data>(returnData.dropFirst(3))
+        })
+    }
+    
     
 }
