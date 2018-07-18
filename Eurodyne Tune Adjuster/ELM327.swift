@@ -82,14 +82,12 @@ class ELM327 : NSObject, GCDAsyncSocketDelegate {
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
         switch(state) {
         case State.WaitingForData:
-            print("Got raw data \(data)")
             state = State.Connected
             let returnedData = parseByteLines(byteLines: String(data: data, encoding: String.Encoding.ascii)!)
             returnedData.forEach { (byteResult) in
-                print("Byte enum \(byteResult)")
+                print("Parsed data line: \(byteResult)")
                 switch(byteResult) {
                 case let .Data(receivedData):
-                    print("Got data \(data)")
                     dataPromise?.fulfill(receivedData)
                     break
                 case .OK:
@@ -128,7 +126,7 @@ class ELM327 : NSObject, GCDAsyncSocketDelegate {
     }
     
     func sendMessageASCII(message : String) {
-        print("Sending \(message)")
+        print("Sending: \(message)")
         let data = message.appending("\r\n").data(using: String.Encoding.ascii)!
         socket?.write(data, withTimeout: 0.1, tag: 1)
     }
@@ -141,7 +139,7 @@ class ELM327 : NSObject, GCDAsyncSocketDelegate {
     func parseByteLines(byteLines: String) -> [ByteMatchingResult] {
         let strippedByteLines = byteLines.replacingOccurrences(of: " ", with: "").split(separator: "\r")
         return strippedByteLines.map { (byteLine) -> ByteMatchingResult in
-            print("Got line \(byteLine.uppercased())")
+            print("Got line: \(byteLine.uppercased())")
             switch(byteLine.uppercased()) {
             case Regex(pattern: "OK"):
                 return ByteMatchingResult.OK

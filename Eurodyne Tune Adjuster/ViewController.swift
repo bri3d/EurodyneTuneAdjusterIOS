@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         appDelegate.connectToElm327().then { (connection) -> Void in
-            
             connection.eurodyne.getOctaneMinimum().then({ (octaneNumber) -> Void in
                 self.octaneMinimum?.text = String(octaneNumber)
                 self.octaneSlider?.minimumValue = Float(octaneNumber)
@@ -68,12 +67,12 @@ class ViewController: UIViewController {
     
     @IBAction func boostSliderUpdated(sender : UISlider) {
         sender.value = round(sender.value)
-        self.boostLabel?.text = String(sender.value)
+        self.boostLabel?.text = String(format: "%.0f", sender.value)
     }
     
     @IBAction func octaneSliderUpdated(sender: UISlider) {
         sender.value = round(sender.value)
-        self.octaneLabel?.text = String(sender.value)
+        self.octaneLabel?.text = String(format: "%.0f", sender.value)
     }
     
     @IBAction func saveBoostAndOctane(sender : UIView) {
