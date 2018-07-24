@@ -17,17 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func connectToElm327() -> Promise<Connection> {
         guard let activeConnection = connection else {
-            let elm327 = ELM327()
-            return elm327.connectTo(ip: "192.168.0.10").then { (success) -> Promise<Connection> in
-                let isoIO = ISO15765(elm327 : elm327)
-                let edIO = Eurodyne(iso15765: isoIO)
-                return elm327.initializeELM().then { (_) -> Promise<Connection> in
-                    self.connection = Connection(elm327: elm327, eurodyne: edIO, iso15765: isoIO)
-                    return Promise<Connection>(self.connection!)
-                }
-            }
+           return getNewConnection()
+        }
+        if (activeConnection.elm327.state == ELM327.State.LostConnection) {
+            return getNewConnection()
         }
         return Promise<Connection>(activeConnection)
+    }
+    
+    func getNewConnection() -> Promise<Connection> {
+        let elm327 = ELM327()
+        return elm327.connectTo(ip: "192.168.0.10").then { (success) -> Promise<Connection> in
+            let isoIO = ISO15765(elm327 : elm327)
+            let edIO = Eurodyne(iso15765: isoIO)
+            return elm327.initializeELM().then { (_) -> Promise<Connection> in
+                self.connection = Connection(elm327: elm327, eurodyne: edIO, iso15765: isoIO)
+                return Promise<Connection>(self.connection!)
+            }
+        }
     }
 
 

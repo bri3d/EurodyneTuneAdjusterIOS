@@ -8,6 +8,7 @@
 
 import UIKit
 import Promises
+import SwiftSpinner
 
 class ViewController: UIViewController {
     @IBOutlet var boostLabel : UILabel?
@@ -28,7 +29,11 @@ class ViewController: UIViewController {
     func updateViewFromElm() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
-        appDelegate.connectToElm327().then { (connection) -> Void in
+        SwiftSpinner.useContainerView(self.view)
+        SwiftSpinner.show("Connecting...")
+        
+        appDelegate.connectToElm327().then({ (connection) -> Void in
+            SwiftSpinner.show("Fetching data...")
             connection.eurodyne.getOctaneMinimum().then({ (octaneNumber) -> Void in
                 self.octaneMinimum?.text = String(octaneNumber)
                 self.octaneSlider?.minimumValue = Float(octaneNumber)
@@ -60,9 +65,19 @@ class ViewController: UIViewController {
                     self.boostSlider?.isEnabled = true
                 })
             }).then({ (_) -> Void in
+                SwiftSpinner.hide()
                 self.saveButton?.isEnabled = true
+            }).recover({ (error) -> Int in
+                SwiftSpinner.show(progress: 0, title: "Couldn't fetch data.").addTapHandler({
+                    self.updateViewFromElm()
+                }, subtitle: "Tap to retry.")
+                return 0
             })
-        }
+        }).recover({ (error) -> Void in
+            SwiftSpinner.show(progress: 0, title: "Couldn't connect to ELM327.").addTapHandler({
+                self.updateViewFromElm()
+            }, subtitle: "Tap to retry.")
+        })
     }
     
     @IBAction func boostSliderUpdated(sender : UISlider) {
@@ -81,8 +96,11 @@ class ViewController: UIViewController {
         self.saveButton?.isEnabled = false
         self.octaneSlider?.isEnabled = false
         self.boostSlider?.isEnabled = false
+        
+        SwiftSpinner.show("Connecting...")
 
         appDelegate.connectToElm327().then { (connection) -> Void in
+            SwiftSpinner.show("Saving data...")
             connection.eurodyne.setBoost(boost: Int((self.boostSlider?.value)!)).then({ (_) -> Promise<Int> in
                 return connection.eurodyne.setOctane(octane: Int((self.octaneSlider?.value)!))
             }).then({ (_) -> Promise<Int> in

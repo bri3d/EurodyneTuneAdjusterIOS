@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "0940"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6530B8B32F77020E7B148568BDCE1F76"
+               BlueprintIdentifier = "6F27BABE5322DB986F93A5B6EB21AB98"
                BuildableName = "Pods_Eurodyne_Tune_Adjuster.framework"
                BlueprintName = "Pods-Eurodyne Tune Adjuster"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6530B8B32F77020E7B148568BDCE1F76"
+            BlueprintIdentifier = "6F27BABE5322DB986F93A5B6EB21AB98"
             BuildableName = "Pods_Eurodyne_Tune_Adjuster.framework"
             BlueprintName = "Pods-Eurodyne Tune Adjuster"
             ReferencedContainer = "container:Pods.xcodeproj">

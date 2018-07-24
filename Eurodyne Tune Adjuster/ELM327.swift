@@ -42,7 +42,7 @@ class ELM327 : NSObject, GCDAsyncSocketDelegate {
         socket = GCDAsyncSocket(delegate: self, delegateQueue: DispatchQueue.global())
         do {
             print("Connecting to \(ip) on port 35000")
-            try socket!.connect(toHost: ip, onPort: 35000)
+            try socket!.connect(toHost: ip, onPort: 35000, withTimeout: 10)
             state = State.Connecting
             connectionPromise = Promise<Bool>.pending()
             return connectionPromise!
@@ -62,6 +62,9 @@ class ELM327 : NSObject, GCDAsyncSocketDelegate {
     func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
         print("Lost Connection! \(err)")
         state = State.LostConnection
+        dataPromise?.reject(err!)
+        okayPromise?.reject(err!)
+        connectionPromise?.reject(err!)
         socket = nil
     }
     
