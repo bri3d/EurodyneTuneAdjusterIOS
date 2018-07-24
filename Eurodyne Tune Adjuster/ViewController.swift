@@ -107,6 +107,11 @@ class ViewController: UIViewController {
                 connection.eurodyne.setBoost(boost: Int((self.boostSlider?.value)!))
             }).then({ (_) -> Void in
                 self.updateViewFromElm()
+            }).recover({ (error) -> Int in
+                SwiftSpinner.show(progress: 0, title: "Failed to save data.").addTapHandler({
+                    self.updateViewFromElm()
+                }, subtitle: "Tap to reload data from ECU.")
+                return 0
             })
         }
     }
