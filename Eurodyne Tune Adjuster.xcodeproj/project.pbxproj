@@ -240,13 +240,16 @@
 				TargetAttributes = {
 					BD21B05E20FBE1A300042598 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					BD21B07220FBE1A600042598 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = BD21B05E20FBE1A300042598;
 					};
 					BD21B07D20FBE1A600042598 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = BD21B05E20FBE1A300042598;
 					};
 				};
@@ -539,7 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-Adjuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -558,7 +561,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-Adjuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -569,6 +572,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P439578UL;
 				INFOPLIST_FILE = "Eurodyne Tune AdjusterTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -577,7 +581,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-AdjusterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eurodyne Tune Adjuster.app/Eurodyne Tune Adjuster";
 			};
@@ -589,6 +593,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P439578UL;
 				INFOPLIST_FILE = "Eurodyne Tune AdjusterTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -597,7 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-AdjusterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eurodyne Tune Adjuster.app/Eurodyne Tune Adjuster";
 			};
@@ -608,6 +613,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P439578UL;
 				INFOPLIST_FILE = "Eurodyne Tune AdjusterUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -616,7 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-AdjusterUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Eurodyne Tune Adjuster";
 			};
@@ -627,6 +633,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P439578UL;
 				INFOPLIST_FILE = "Eurodyne Tune AdjusterUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -635,7 +642,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-AdjusterUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Eurodyne Tune Adjuster";
 			};
