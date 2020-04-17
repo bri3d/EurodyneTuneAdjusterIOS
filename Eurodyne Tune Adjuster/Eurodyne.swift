@@ -9,6 +9,12 @@
 import Foundation
 import Promises
 
+struct FeatureFlags {
+    var boostEnabled = false
+    var e85Enabled = false
+    var octaneEnabled = false
+}
+
 class Eurodyne {
     let iso15765 : ISO15765
     
@@ -40,6 +46,25 @@ class Eurodyne {
         }
     }
     
+    func getE85() -> Promise<Int> {
+        let localIdentifier = Data([0xF1, 0xFD])
+        return iso15765.readLocalIdentifier(localIdentifier: localIdentifier).then { (data) -> Promise<Int> in
+            let uint8 = data.first!
+            return Promise<Int>(self.calculateE85(e85: uint8))
+        }
+    }
+    
+    func getFeatureFlags() -> Promise<FeatureFlags> {
+        let localIdentifier = Data([0xF1, 0xFB])
+        return iso15765.readLocalIdentifier(localIdentifier: localIdentifier).then { (data) -> Promise<FeatureFlags> in
+            let uint8 = data.first!
+            let boostEnabled = (uint8 & 0x2) > 0
+            let octaneEnabled = (uint8 & 0x4) > 0
+            let e85Enabled = (uint8 & 0x20) > 0
+            return Promise<FeatureFlags>(FeatureFlags(boostEnabled: boostEnabled, e85Enabled: e85Enabled, octaneEnabled: octaneEnabled))
+        }
+    }
+    
     func getOctaneSetting() -> Promise<Int> {
         let localIdentifier = Data([0xF1, 0xF9])
         return iso15765.readLocalIdentifier(localIdentifier: localIdentifier).then { (data) -> Promise<Int> in
@@ -61,6 +86,14 @@ class Eurodyne {
         return iso15765.readLocalIdentifier(localIdentifier: localIdentifier).then { (data) -> Promise<Int> in
             let uint8 = data.first!
             return Promise<Int>(self.calculateOctane(octane: uint8))
+        }
+    }
+    
+    func setE85(e85: Int) -> Promise<Int> {
+        let writeE85Byte = calculateWriteE85(e85: e85)
+        let localIdentifier = Data([0xF1, 0xFD])
+        return iso15765.writeLocalIdentifier(localIdentifier: localIdentifier, value: Data([writeE85Byte])).then { (data) -> Promise<Int> in
+            return Promise<Int>(e85)
         }
     }
     
@@ -95,5 +128,14 @@ class Eurodyne {
     
     func calculateOctane(octane: UInt8) -> Int {
         return Int(octane)
+    }
+    
+    func calculateE85(e85: UInt8) -> Int {
+        return Int(Double(e85) / 1.28) + 1
+    }
+    
+    func calculateWriteE85(e85: Int) -> UInt8 {
+        let result = Int(Double(e85) * 1.28)
+        return UInt8(result)
     }
 }
