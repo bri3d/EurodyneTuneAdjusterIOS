@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -13,41 +13,41 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Eurodyne_Tune_Adjuster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-mc-9jz">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W24-tw-eXI">
-                                        <rect key="frame" x="0.0" y="0.0" width="834" height="247"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="227.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-DO-l0s">
-                                                <rect key="frame" x="332.5" y="99.5" width="169.5" height="48"/>
+                                                <rect key="frame" x="299.5" y="89.5" width="169.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXX-oo-pJQ">
-                                                <rect key="frame" x="367.5" y="51.5" width="99.5" height="48"/>
+                                                <rect key="frame" x="334.5" y="41.5" width="99.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nzM-mQ-8ie">
-                                                <rect key="frame" x="-2" y="155" width="838" height="31"/>
+                                                <rect key="frame" x="-2" y="145" width="772" height="31"/>
                                                 <connections>
                                                     <action selector="boostSliderUpdatedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="LTz-gT-CyK"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZD-rJ-d1Z">
-                                                <rect key="frame" x="8" y="134.5" width="10.5" height="20.5"/>
+                                                <rect key="frame" x="8" y="124.5" width="10.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHm-TB-PKC">
-                                                <rect key="frame" x="815.5" y="134.5" width="10.5" height="20.5"/>
+                                                <rect key="frame" x="749.5" y="124.5" width="10.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -68,34 +68,34 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02f-6D-DSt">
-                                        <rect key="frame" x="0.0" y="247" width="834" height="247"/>
+                                        <rect key="frame" x="0.0" y="227.5" width="768" height="227.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUd-6G-IC1">
-                                                <rect key="frame" x="332.5" y="99.5" width="169.5" height="48"/>
+                                                <rect key="frame" x="299.5" y="89.5" width="169.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Octane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzn-xo-gjY">
-                                                <rect key="frame" x="354.5" y="51.5" width="125" height="48"/>
+                                                <rect key="frame" x="321.5" y="41.5" width="125" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="d6g-fu-ici">
-                                                <rect key="frame" x="-2" y="147.5" width="838" height="31"/>
+                                                <rect key="frame" x="-2" y="137.5" width="772" height="31"/>
                                                 <connections>
                                                     <action selector="octaneSliderUpdatedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="0Kc-b7-rwB"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G3-26-xxu">
-                                                <rect key="frame" x="8" y="127" width="10.5" height="20.5"/>
+                                                <rect key="frame" x="8" y="117" width="10.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-gE-3aJ">
-                                                <rect key="frame" x="815.5" y="127" width="10.5" height="20.5"/>
+                                                <rect key="frame" x="749.5" y="117" width="10.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -116,22 +116,25 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fq-Ub-KgY">
-                                        <rect key="frame" x="0.0" y="494" width="834" height="371"/>
+                                        <rect key="frame" x="0.0" y="455" width="768" height="341.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zJ-ZF-3bx">
-                                                <rect key="frame" x="332.5" y="161.5" width="169.5" height="48"/>
+                                                <rect key="frame" x="299.5" y="146.5" width="169.5" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E85" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyv-T6-jpP">
-                                                <rect key="frame" x="381.5" y="113.5" width="71" height="48"/>
+                                                <rect key="frame" x="348.5" y="98.5" width="71" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="v7Q-pc-kZ5">
-                                                <rect key="frame" x="-2" y="209.5" width="838" height="31"/>
+                                                <rect key="frame" x="-2" y="194.5" width="772" height="31"/>
+                                                <connections>
+                                                    <action selector="e85SliderUpdatedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="McU-X9-azF"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <constraints>
@@ -145,10 +148,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MvW-Qk-iVb">
-                                        <rect key="frame" x="0.0" y="865" width="834" height="247"/>
+                                        <rect key="frame" x="0.0" y="796.5" width="768" height="227.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzV-OZ-hJR">
-                                                <rect key="frame" x="400" y="108.5" width="34" height="30"/>
+                                                <rect key="frame" x="367" y="99" width="34" height="30"/>
                                                 <state key="normal" title="Save"/>
                                                 <connections>
                                                     <action selector="saveBoostAndOctaneWithSender:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="61i-MA-Jf2"/>
@@ -172,6 +175,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FCG-mc-9jz" secondAttribute="trailing" id="8yW-aJ-FsS"/>
                             <constraint firstItem="FCG-mc-9jz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="awm-ih-62v"/>
@@ -185,7 +189,7 @@
                         <outlet property="boostMaximum" destination="cHm-TB-PKC" id="InF-Rz-LYE"/>
                         <outlet property="boostMinimum" destination="9ZD-rJ-d1Z" id="ZHE-Ww-NUe"/>
                         <outlet property="boostSlider" destination="nzM-mQ-8ie" id="Pcw-A8-X3y"/>
-                        <outlet property="e85Label" destination="4zJ-ZF-3bx" id="02f-hp-DLI"/>
+                        <outlet property="e85Label" destination="4zJ-ZF-3bx" id="jDF-v8-B6N"/>
                         <outlet property="e85Slider" destination="v7Q-pc-kZ5" id="2to-NR-lbA"/>
                         <outlet property="octaneLabel" destination="wUd-6G-IC1" id="suq-qI-Cha"/>
                         <outlet property="octaneMaximum" destination="cRI-gE-3aJ" id="lTb-if-3Tb"/>

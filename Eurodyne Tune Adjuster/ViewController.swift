@@ -33,16 +33,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateViewFromElm()
+        updateViewFromSource(connectionAttempt: 0)
     }
     
-    func updateViewFromElm() {
+    func updateViewFromSource(connectionAttempt: Int) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
         SwiftSpinner.useContainerView(self.view)
         SwiftSpinner.show("Connecting...")
         
-        appDelegate.connectToElm327().then({ (connection) -> Void in
+        appDelegate.getConnection(connectionType: appDelegate.connectionType).then({ (connection) -> Void in
             SwiftSpinner.show("Fetching data...")
             connection.eurodyne.getFeatureFlags().then({ (featureFlags) -> Promise<FeatureFlags> in
                 if (featureFlags.octaneEnabled) {
@@ -106,14 +105,19 @@ class ViewController: UIViewController {
                 self.saveButton?.isEnabled = true
             }).recover { (error) -> FeatureFlags in
                 SwiftSpinner.show(progress: 0, title: "Couldn't fetch data.").addTapHandler({
-                    self.updateViewFromElm()
+                    self.updateViewFromSource(connectionAttempt: connectionAttempt + 1)
                 }, subtitle: "Tap to retry.")
                 return FeatureFlags()
             }
         }).recover({ (error) -> Void in
             SwiftSpinner.show(progress: 0, title: "Couldn't connect to ELM327.").addTapHandler({
-                self.updateViewFromElm()
-            }, subtitle: "Tap to retry.")
+                if (connectionAttempt > 2) {
+                    appDelegate.connectionType = .Mock
+                    self.updateViewFromSource(connectionAttempt: 0)
+                } else {
+                    self.updateViewFromSource(connectionAttempt: connectionAttempt + 1)
+                }
+            }, subtitle: connectionAttempt > 2 ? "Tap to enter demo mode." : "Tap to retry.")
         })
     }
     
@@ -149,7 +153,7 @@ class ViewController: UIViewController {
             var featureFlags = FeatureFlags()
         }
 
-        appDelegate.connectToElm327().then { (connection) -> Void in
+        appDelegate.getConnection(connectionType: appDelegate.connectionType).then { (connection) -> Void in
             SwiftSpinner.show("Saving data...")
             let featureFlags = FeatureFlags(boostEnabled: self.boostSlider?.isEnabled ?? false, e85Enabled: self.e85Slider?.isEnabled ?? false, octaneEnabled: self.octaneSlider?.isEnabled ?? false)
             let sliderValues = SliderValues(e85 : Int(self.e85Slider!.value), octane: Int(self.octaneSlider!.value), boost: Int(self.boostSlider!.value), featureFlags: featureFlags)
@@ -179,11 +183,11 @@ class ViewController: UIViewController {
                     return Promise<SliderValues>(sliderValues)
                 }
             }).then({ (sliderValues) -> SliderValues in
-                self.updateViewFromElm()
+                self.updateViewFromSource(connectionAttempt: 0)
                 return sliderValues
             }).recover({ (error) -> SliderValues in
                 SwiftSpinner.show(progress: 0, title: "Failed to save data.").addTapHandler({
-                    self.updateViewFromElm()
+                    self.updateViewFromSource(connectionAttempt: 0)
                 }, subtitle: "Tap to reload data from ECU.")
                 return SliderValues()
             })

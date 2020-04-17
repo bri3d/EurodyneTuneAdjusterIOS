@@ -22,6 +22,7 @@
 		BDDDCFBF20FD7F9F00F2C9C8 /* Eurodyne.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */; };
 		BDDDCFC120FD900E00F2C9C8 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFC020FD900E00F2C9C8 /* Regex.swift */; };
 		BDDDCFC320FEBEDE00F2C9C8 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCFC220FEBEDE00F2C9C8 /* Connection.swift */; };
+		C8B12ED9244A734800826748 /* MockEurodyne.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B12ED8244A734800826748 /* MockEurodyne.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eurodyne.swift; sourceTree = "<group>"; };
 		BDDDCFC020FD900E00F2C9C8 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		BDDDCFC220FEBEDE00F2C9C8 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		C8B12ED8244A734800826748 /* MockEurodyne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEurodyne.swift; sourceTree = "<group>"; };
 		F28EA88167C0243834C200E2 /* Pods-Eurodyne Tune Adjuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eurodyne Tune Adjuster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eurodyne Tune Adjuster/Pods-Eurodyne Tune Adjuster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 				BDDDCFBE20FD7F9F00F2C9C8 /* Eurodyne.swift */,
 				BDDDCFC020FD900E00F2C9C8 /* Regex.swift */,
 				BDDDCFC220FEBEDE00F2C9C8 /* Connection.swift */,
+				C8B12ED8244A734800826748 /* MockEurodyne.swift */,
 			);
 			path = "Eurodyne Tune Adjuster";
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				BDDDCFBD20FD7E1500F2C9C8 /* Data+HexEncodedString.swift in Sources */,
 				BDDDCFB920FC358700F2C9C8 /* String+HexToData.swift in Sources */,
 				BDDDCFBF20FD7F9F00F2C9C8 /* Eurodyne.swift in Sources */,
+				C8B12ED9244A734800826748 /* MockEurodyne.swift in Sources */,
 				BD21B06520FBE1A300042598 /* ViewController.swift in Sources */,
 				BDDDCFBB20FD7D5400F2C9C8 /* ISO15765.swift in Sources */,
 				BD21B06320FBE1A300042598 /* AppDelegate.swift in Sources */,

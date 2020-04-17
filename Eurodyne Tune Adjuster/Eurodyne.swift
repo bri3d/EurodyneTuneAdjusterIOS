@@ -15,7 +15,21 @@ struct FeatureFlags {
     var octaneEnabled = false
 }
 
-class Eurodyne {
+protocol Eurodyne {
+    func getBoostSetting() -> Promise<Int>
+    func getBoostMinimum() -> Promise<Int>
+    func getBoostMaximum() -> Promise<Int>
+    func getE85() -> Promise<Int>
+    func getFeatureFlags() -> Promise<FeatureFlags>
+    func getOctaneSetting() -> Promise<Int>
+    func getOctaneMinimum() -> Promise<Int>
+    func getOctaneMaximum() -> Promise<Int>
+    func setE85(e85: Int) -> Promise<Int>
+    func setOctane(octane : Int) -> Promise<Int>
+    func setBoost(boost : Int) -> Promise<Int>
+}
+
+class MQBEurodyne : Eurodyne {
     let iso15765 : ISO15765
     
     init(iso15765 : ISO15765) {
