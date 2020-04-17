@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Eurodyne Tune Adjuster/Pods-Eurodyne Tune Adjuster-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
+${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
+${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework
+${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework
