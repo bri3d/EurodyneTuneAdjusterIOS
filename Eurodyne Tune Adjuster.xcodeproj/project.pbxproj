@@ -531,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3P439578UL;
 				INFOPLIST_FILE = "Eurodyne Tune Adjuster/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
@@ -551,6 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3P439578UL;
 				INFOPLIST_FILE = "Eurodyne Tune Adjuster/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;

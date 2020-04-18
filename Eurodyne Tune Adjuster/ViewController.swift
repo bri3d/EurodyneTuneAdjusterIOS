@@ -148,9 +148,6 @@ class ViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         self.saveButton?.isEnabled = false
-        self.octaneSlider?.isEnabled = false
-        self.boostSlider?.isEnabled = false
-        self.e85Slider?.isEnabled = false
         
         SwiftSpinner.show("Connecting...")
         
@@ -191,6 +188,9 @@ class ViewController: UIViewController {
                     return Promise<SliderValues>(sliderValues)
                 }
             }).then({ (sliderValues) -> SliderValues in
+                self.octaneSlider?.isEnabled = false
+                self.boostSlider?.isEnabled = false
+                self.e85Slider?.isEnabled = false
                 self.updateViewFromSource(connectionAttempt: 0)
                 return sliderValues
             }).recover({ (error) -> SliderValues in
