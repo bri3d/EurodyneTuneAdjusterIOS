@@ -19,6 +19,7 @@ func promiseOrItem<T>(returnPromise: Bool, item: T, promise: Promise<T>) -> Prom
 }
 
 class ViewController: UIViewController {
+    @IBOutlet var demoMode : UIButton?
     @IBOutlet var boostLabel : UILabel?
     @IBOutlet var octaneLabel : UILabel?
     @IBOutlet var boostSlider : UISlider?
@@ -113,6 +114,7 @@ class ViewController: UIViewController {
             SwiftSpinner.show(progress: 0, title: "Couldn't connect to ELM327.").addTapHandler({
                 if (connectionAttempt > 2) {
                     appDelegate.connectionType = .Mock
+                    self.demoMode?.isHidden = false
                     self.updateViewFromSource(connectionAttempt: 0)
                 } else {
                     self.updateViewFromSource(connectionAttempt: connectionAttempt + 1)
@@ -134,6 +136,12 @@ class ViewController: UIViewController {
     @IBAction func e85SliderUpdated(sender: UISlider) {
         sender.value = round(sender.value)
         self.e85Label?.text = String(format: "%.0f", sender.value)
+    }
+    
+    @IBAction func exitDemoMode(sender : UIView) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.connectionType = .ELM327
+        self.updateViewFromSource(connectionAttempt: 0)
     }
     
     @IBAction func saveBoostAndOctane(sender : UIView) {

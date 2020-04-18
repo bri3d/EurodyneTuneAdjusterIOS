@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		18F2EAD9B3D8662DA5D2F71D /* Pods_Eurodyne_Tune_Adjuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eurodyne_Tune_Adjuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B223635B86246D4D23B54378 /* Pods-Eurodyne Tune Adjuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eurodyne Tune Adjuster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eurodyne Tune Adjuster/Pods-Eurodyne Tune Adjuster.release.xcconfig"; sourceTree = "<group>"; };
-		BD21B05F20FBE1A300042598 /* Eurodyne Tune Adjuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eurodyne Tune Adjuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD21B05F20FBE1A300042598 /* Tune Adjuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tune Adjuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD21B06220FBE1A300042598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD21B06420FBE1A300042598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD21B06720FBE1A300042598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		BD21B06020FBE1A300042598 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD21B05F20FBE1A300042598 /* Eurodyne Tune Adjuster.app */,
+				BD21B05F20FBE1A300042598 /* Tune Adjuster.app */,
 				BD21B07320FBE1A600042598 /* Eurodyne Tune AdjusterTests.xctest */,
 				BD21B07E20FBE1A600042598 /* Eurodyne Tune AdjusterUITests.xctest */,
 			);
@@ -192,7 +192,7 @@
 			);
 			name = "Eurodyne Tune Adjuster";
 			productName = "Eurodyne Tune Adjuster";
-			productReference = BD21B05F20FBE1A300042598 /* Eurodyne Tune Adjuster.app */;
+			productReference = BD21B05F20FBE1A300042598 /* Tune Adjuster.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BD21B07220FBE1A600042598 /* Eurodyne Tune AdjusterTests */ = {
@@ -539,7 +539,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-Adjuster";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tune Adjuster";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,7 +559,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brianledbetter.Eurodyne-Tune-Adjuster";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tune Adjuster";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
