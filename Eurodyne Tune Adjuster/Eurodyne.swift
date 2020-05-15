@@ -145,7 +145,7 @@ class MQBEurodyne : Eurodyne {
     }
     
     func calculateE85(e85: UInt8) -> Int {
-        return Int(Double(e85) / 1.28) + 1
+        return Int(Double(e85) / 1.28)
     }
     
     func calculateWriteE85(e85: Int) -> UInt8 {
